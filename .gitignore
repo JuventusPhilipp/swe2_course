@@ -2,6 +2,7 @@
 /.idea/
 /out/
 /target/
+*.txt
 
 # Compiled class file
 *.class
