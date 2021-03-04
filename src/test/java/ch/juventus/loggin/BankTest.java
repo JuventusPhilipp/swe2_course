@@ -1,10 +1,10 @@
 package ch.juventus.loggin;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
-class BankTest {
+public class BankTest {
 
     private Bank bank;
 
@@ -13,7 +13,6 @@ class BankTest {
         bank = new Bank(500);
     }
 
-    // withdraw
     @Test
     void shouldWithdrawTen() throws Exception {
         assertEquals(490, this.bank.withdraw(10));

@@ -15,8 +15,8 @@ public class Bank {
     }
 
     public double withdraw(double quantity) throws Exception {
-        if (getBalance() - quantity < 0) {
-            logger.error("balance is to low, you need {} more", abs(getBalance()-quantity));
+        if (this.balance - quantity < 0) {
+            logger.error("balance is to low, you need {} more", abs(this.balance-quantity));
             throw new Exception("balance is to low");
         }
         return balance -= quantity;
@@ -29,13 +29,5 @@ public class Bank {
 
     public double retrieveBalance() {
         return balance;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
     }
 }
